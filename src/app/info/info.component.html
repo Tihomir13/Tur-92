@@ -1,0 +1,11 @@
+<div class="d-flex gap-4">
+  <img
+    style="height: 30px; width: 30px"
+    [src]="image()"
+    [alt]="title() + ' icon'"
+  />
+  <div style="width: 260px;" class="d-flex flex-column d-block">
+    <h5>{{ title() }}</h5>
+    <span>{{ info() }}</span>
+  </div>
+</div>
