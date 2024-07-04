@@ -1,0 +1,6 @@
+<div class="row d-flex flex-column m-5">
+  <h3 class="col-10 p-4">{{ title() }}</h3>
+  @for (text of paragraphs(); track text) {
+  <p class="col-8 ms-3">{{ text }}</p>
+  }
+</div>
