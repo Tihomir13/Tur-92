@@ -1,0 +1,25 @@
+<!-- <section
+  class="container-fluid d-flex flex-column align-items-center ps-0 pe-0"
+>
+  <h2>Автокранове</h2>
+  @for (img of craneImgs; track $index) {
+  <img [src]="img" alt="" />
+  }
+</section> -->
+
+<section
+  class="container-fluid d-flex flex-column align-items-center ps-0 pe-0"
+>
+  <div class="col-11 ms-5 d-flex flex-column align-items-center">
+    <h2>Автокранове</h2>
+    <div id="slideshow" class="slideshow col-5">
+      <img
+        *ngFor="let img of craneImgs; let i = index"
+        [src]="img"
+        [class.active]="i === currentSlide"
+      />
+      <button class="prev" (click)="prevSlide()">&#10094;</button>
+      <button class="next" (click)="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+</section>

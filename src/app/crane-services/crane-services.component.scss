@@ -1,4 +1,26 @@
+@import "bootstrap";
 h2 {
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.cols {
+  @extend .col-xl-4;
+  @extend .col-lg-5;
+  @extend .col-md-7;
+}
+
+.flex-xxl-row {
+  @extend .d-sm-flex;
+  @extend .flex-row;
+}
+
+.flex-sm-column {
+  @extend .d-flex;
+  @extend .flex-column;
+}
+
+.flex-row-column {
+  @extend .flex-xxl-row;
+  @extend .flex-sm-column;
 }
