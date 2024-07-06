@@ -10,3 +10,7 @@ $prefix: "mo-";
 body {
   background-color: gray;
 }
+
+* {
+  scrollbar-width: none;
+}

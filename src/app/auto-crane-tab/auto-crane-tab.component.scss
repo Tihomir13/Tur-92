@@ -4,11 +4,13 @@ h2 {
 }
 
 .slideshow {
+  width: 85%;
   position: relative;
   max-width: 100%;
   img {
     display: none;
     width: 100%;
+    border-radius: 9px;
   }
   img.active {
     display: block;
@@ -16,28 +18,83 @@ h2 {
   .prev,
   .next {
     cursor: pointer;
+    border: 0px;
+    background: none;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    font-size: xx-large;
+    transition: 0.2s ease;
+    border-radius: 9px;
     user-select: none;
   }
   .prev {
     left: 0;
-    border-radius: 3px 0 0 3px;
   }
   .next {
     right: 0;
-    border-radius: 3px 3px 0 0;
   }
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
 }
+
+/*Dots*/
+
+.dots-container {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+h3 {
+  font-size: xx-large;
+}
+
+span {
+  font-size: x-large;
+}
+
+
+
+
+
+
+// .slideshow {
+//   width: 100%;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .slideshow img {
+//   display: none;
+//   transition: opacity 0.5s ease-in-out;
+// }
+
+// .slideshow img.active {
+//   display: block;
+//   opacity: 1;
+// }
+
+// @media (max-width: 768px) {
+//   .slideshow img {
+//     max-height: 20rem; /* По-малка височина за мобилни устройства */
+//   }
+// }

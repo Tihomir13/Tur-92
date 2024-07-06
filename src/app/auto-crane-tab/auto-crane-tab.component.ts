@@ -24,4 +24,8 @@ export class AutoCraneTabComponent {
     this.currentSlide =
       (this.currentSlide - 1 + this.craneImgs.length) % this.craneImgs.length;
   }
+
+  goToSlide(index: number) {
+    this.currentSlide = index;
+  }
 }

@@ -1,25 +1,47 @@
-<!-- <section
-  class="container-fluid d-flex flex-column align-items-center ps-0 pe-0"
->
-  <h2>Автокранове</h2>
-  @for (img of craneImgs; track $index) {
-  <img [src]="img" alt="" />
-  }
-</section> -->
-
-<section
-  class="container-fluid d-flex flex-column align-items-center ps-0 pe-0"
->
-  <div class="col-11 ms-5 d-flex flex-column align-items-center">
-    <h2>Автокранове</h2>
-    <div id="slideshow" class="slideshow col-5">
+<section class="container-fluid m-0 row d-flex mt-5 mb-5">
+  <h2 class="col-xxl-7 col-md-12 mb-5" style="text-align: center">
+    Автокранове
+  </h2>
+  <div class="col-xxl-7 d-flex flex-column align-items-center mb-5">
+    <div id="slideshow" class="slideshow col-8">
       <img
+        style="height: 30rem"
         *ngFor="let img of craneImgs; let i = index"
         [src]="img"
         [class.active]="i === currentSlide"
       />
       <button class="prev" (click)="prevSlide()">&#10094;</button>
       <button class="next" (click)="nextSlide()">&#10095;</button>
+    </div>
+    <div class="dots-container d-flex justify-content-center mt-3">
+      <span
+        *ngFor="let img of craneImgs; let i = index"
+        class="dot"
+        [class.active]="i === currentSlide"
+        (click)="goToSlide(i)"
+      ></span>
+    </div>
+  </div>
+  <div class="col-xxl-5 d-flex flex-column align-items-center">
+    <div class="d-flex flex-column">
+      <div>
+        <h3>Спецификации</h3>
+        <div class="d-flex">
+          <div class="d-flex flex-column">
+            <span>Товароподемост:</span>
+            <span>Основна стрела:</span>
+            <span>Удължение:</span>
+            <span>Цена/час:</span>
+          </div>
+          <div class="d-flex flex-column ms-5">
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+          </div>
+        </div>
+      </div>
+      <span class="mt-5">Подходящ е за:</span>
     </div>
   </div>
 </section>
