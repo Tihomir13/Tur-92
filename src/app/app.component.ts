@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CraneServicesComponent } from './crane-services/crane-services.component';
 import { AutoCraneTabComponent } from './auto-crane-tab/auto-crane-tab.component';
+import { LocationTabComponent } from './location-tab/location-tab.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { AutoCraneTabComponent } from './auto-crane-tab/auto-crane-tab.component
     AboutUsComponent,
     CraneServicesComponent,
     AutoCraneTabComponent,
+    LocationTabComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
