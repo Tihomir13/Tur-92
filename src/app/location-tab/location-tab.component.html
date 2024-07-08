@@ -1,5 +1,18 @@
-<section class="container-fluid d-flex justify-content-center mt-5">
-  <h2 class="col-6" style="text-align: center;">Къде се намираме?</h2>
+<section class="container-fluid d-flex justify-content-center">
+  <div class="col-6 d-flex flex-column mt-2 align-items-center gap-5">
+    <h2 style="text-align: center">Къде се намираме?</h2>
+    <div class="col-6">
+      <h3>Гараж:</h3>
+      <h5>Южна промишлена зона, 5008 Велико Търново</h5>
+    </div>
+    <div class="col-6">
+      <h3>Фирма:</h3>
+      <h5>с. Драгижево, ул.Капитан Дядо Никола 40</h5>
+    </div>
+    <a class="btn btn-primary" [href]="link" target="_blank">
+      Отвори в Google карти
+    </a>
+  </div>
   <div class="col-5 mb-5">
     <app-map />
   </div>

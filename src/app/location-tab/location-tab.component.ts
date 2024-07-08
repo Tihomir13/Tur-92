@@ -8,4 +8,6 @@ import { MapComponent } from './map/map.component';
   templateUrl: './location-tab.component.html',
   styleUrl: './location-tab.component.scss',
 })
-export class LocationTabComponent {}
+export class LocationTabComponent {
+  link = 'https://www.google.com/maps?q=43.06168,25.622733';
+}
