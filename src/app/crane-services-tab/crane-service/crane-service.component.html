@@ -1,0 +1,6 @@
+<article class=" py-4 px-2 row d-flex flex-column m-5 gap-1">
+  <h3 class="px-4">{{ title() }}</h3>
+  @for (text of paragraphs(); track text) {
+  <p class="col-8 ms-3">{{ text }}</p>
+  }
+</article>

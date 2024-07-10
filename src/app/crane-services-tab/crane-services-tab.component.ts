@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { CraneServiceComponent } from './crane-service/crane-service.component';
 
 @Component({
-  selector: 'app-crane-services',
+  selector: 'app-crane-services-tab',
   standalone: true,
   imports: [CraneServiceComponent],
-  templateUrl: './crane-services.component.html',
-  styleUrl: './crane-services.component.scss',
+  templateUrl: './crane-services-tab.component.html',
+  styleUrl: './crane-services-tab.component.scss',
 })
-export class CraneServicesComponent {
+export class CraneServicesTabComponent {
   service1: string[] = [
     'Подем и преместване на тежки товари',
     'Монтаж и демонтаж на машини и съоръжения',
