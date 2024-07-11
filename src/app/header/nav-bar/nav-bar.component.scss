@@ -4,6 +4,11 @@ ul {
 
 li {
   font-size: x-large;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.05);
 }
 
 a {
