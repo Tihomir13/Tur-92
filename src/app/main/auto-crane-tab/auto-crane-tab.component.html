@@ -4,12 +4,13 @@
   </h2>
   <div class="col-xxl-7 d-flex flex-column align-items-center mb-5">
     <div id="slideshow" class="slideshow col-8">
-      <img
-        style="height: 30rem"
-        *ngFor="let img of craneImgs; let i = index"
-        [src]="img"
-        [class.active]="i === currentSlide"
-      />
+      <div class="aspect-ratio">
+        <img
+          *ngFor="let img of craneImgs; let i = index"
+          [src]="img"
+          [class.active]="i === currentSlide"
+        />
+      </div>
       <button class="prev" (click)="prevSlide()">&#10094;</button>
       <button class="next" (click)="nextSlide()">&#10095;</button>
     </div>

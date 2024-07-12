@@ -6,11 +6,11 @@ h2 {
 .slideshow {
   width: 85%;
   position: relative;
-  max-width: 100%;
   img {
+    aspect-ratio: 16/9;
     display: none;
     width: 100%;
-    border-radius: 9px;
+    border-radius:  0.5em;
   }
   img.active {
     display: block;
@@ -23,8 +23,8 @@ h2 {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
+    padding: 1.3rem;
+    margin-top: -5%;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: xx-large;
@@ -71,30 +71,3 @@ h3 {
 span {
   font-size: larger;
 }
-
-
-
-
-
-
-// .slideshow {
-//   width: 100%;
-//   position: relative;
-//   overflow: hidden;
-// }
-
-// .slideshow img {
-//   display: none;
-//   transition: opacity 0.5s ease-in-out;
-// }
-
-// .slideshow img.active {
-//   display: block;
-//   opacity: 1;
-// }
-
-// @media (max-width: 768px) {
-//   .slideshow img {
-//     max-height: 20rem; /* По-малка височина за мобилни устройства */
-//   }
-// }
