@@ -1,39 +1,32 @@
-<header class="container-fluid d-flex flex-column">
-  <div class="row container-fluid d-flex m-0 mt-3">
-    <div class="col-1"></div>
-    <app-info
-      class="col-2"
-      image="images/locationIcon.png"
-      title="Нашият адрес: "
-      info="гр. В. Търново, ул. Дълга лъка"
-    />
+<header class="d-flex flex-column">
+  <div class="container-fluid d-flex flex-column">
+    <div class="row container-fluid d-flex m-0 mt-3">
+      <div class="col-1"></div>
+      <app-info
+        [class]="infoClasses"
+        image="images/locationIcon.png"
+        title="Нашият адрес: "
+        info="гр. В. Търново, ул. Дълга лъка"
+      />
 
-    <div style="width: 1px" class="ms-0 me-0">
-      <span class="vertical-line"></span>
+      <app-info
+        [class]="infoClasses"
+        image="images/clock.png"
+        title="Работно време: "
+        info="от 8:00 до 17:00 ч."
+      />
+
+      <app-info
+        [class]="infoClasses"
+        image="images/phone.png"
+        title="Телефон за връзка: "
+        info="+ 359 87 843 6482"
+      />
     </div>
 
-    <app-info
-      class="col-2"
-      image="images/clock.png"
-      title="Работно време: "
-      info="от 8:00 до 17:00 ч."
-    />
-
-    <div style="width: 1px" class="ms-0 me-0">
-      <span class="vertical-line"></span>
+    <div class="col-12 d-flex justify-content-center">
+      <hr class="col-11 mt-4 mb-3" />
     </div>
-
-    <app-info
-      class="col-2"
-      image="images/phone.png"
-      title="Телефон за връзка: "
-      info="+ 359 87 843 6482"
-    />
   </div>
-
-  <div class="col-12 d-flex justify-content-center">
-    <hr class="col-11 mt-4 mb-3" />
-  </div>
-
   <app-nav-bar />
 </header>

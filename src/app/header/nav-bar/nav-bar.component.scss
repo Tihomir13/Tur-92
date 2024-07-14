@@ -1,21 +1,15 @@
-@import "../../../../node_modules/bootstrap/scss/bootstrap";
-
-ul {
-  list-style-type: none;
-}
-
 li {
   font-size: x-large;
   transition: transform 0.2s;
   transition: color 0.2s;
+  cursor: pointer;
 }
 
 li:hover {
   transform: scale(1.05);
-  color: red;
+  color: #0b5ed7;
 }
 
-a {
-  color: black;
-  text-decoration: none;
+h2 {
+  font-size: 3.5rem;
 }

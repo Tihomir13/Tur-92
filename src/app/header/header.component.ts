@@ -9,4 +9,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  infoClasses = 'col-12 my-2 col-xxl-2 my-xxl-0';
+}
