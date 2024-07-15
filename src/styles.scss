@@ -11,7 +11,8 @@ body {
 }
 
 * {
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 .icon {
