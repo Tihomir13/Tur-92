@@ -24,11 +24,27 @@ export class FormComponent {
     text: new FormControl('', { validators: [Validators.required] }),
   });
 
-  get telIsValid() {
+  get isNameValid() {
     return (
-      this.form.touched &&
-      !this.form.controls.tel.defaultValue &&
+      this.form.controls.name.touched &&
+      this.form.controls.name.dirty &&
+      this.form.controls.name.invalid
+    );
+  }
+
+  get isTelValid() {
+    return (
+      this.form.controls.tel.touched &&
+      this.form.controls.tel.dirty &&
       this.form.controls.tel.invalid
+    );
+  }
+  
+  get isTextValid() {
+    return (
+      this.form.controls.text.touched &&
+      this.form.controls.text.dirty &&
+      this.form.controls.text.invalid
     );
   }
 
