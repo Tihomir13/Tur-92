@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormComponent } from './form/form.component';
 
 @Component({
   selector: 'app-contact-us-tab',
   standalone: true,
-  imports: [],
+  imports: [FormComponent],
   templateUrl: './contact-us-tab.component.html',
   styleUrl: './contact-us-tab.component.scss'
 })

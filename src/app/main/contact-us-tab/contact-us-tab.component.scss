@@ -3,6 +3,12 @@ h2 {
   font-weight: 700;
 }
 
+.background-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .form-overlay {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -18,8 +24,9 @@ h2 {
   box-sizing: border-box;
 }
 
-.form-control {
-  background-color: rgba(71, 98, 255, 0.2);
+.form-background {
+  border-radius: 9px; 
+  background-color: #f4f6fa;
 }
 
 .img-container {
