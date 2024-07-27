@@ -1,48 +1,63 @@
 <footer class="contaienr-fluid footer bg-dark text-white pt-4 pb-3">
   <div class="container">
     <div class="row">
-      <div class="col-xxl-4 mb-5">
-        <h3 class="text-center text-decoration-underline">За нас</h3>
-        <p>
+      <div class="col-xxl-4 d-flex flex-column gap-3 mb-5">
+        <h3 class="text-center">За нас</h3>
+        <p class="text-md-start text-center text-light text-opacity-75">
           Тур-92 предлага висококачествени услуги с автокранове във Велико
           Търново и региона. Нашият екип от професионалисти е на разположение да
           ви помогне при всякакви нужди, свързани с тежки повдигания и
           премествания.
         </p>
       </div>
-      <div class="col-xxl-4 mb-5">
-        <h3 class="text-center text-decoration-underline">Работно време</h3>
-        <ul class="list-unstyled">
-          <li class="my-3">
-            <img class="icon me-2" src="images/clock.png" alt="" />
-            <span>Пон-Пет | 8:00-17:00ч.</span>
-          </li>
-        </ul>
+
+      <div class="col-xxl-4 d-flex flex-column gap-3 mb-5">
+        <h3 class="text-center">Работно време</h3>
+
+        <div class="d-flex flex-md-row flex-column align-items-center gap-2">
+          <img class="icon me-2" src="images/clock.png" alt="clock image" />
+          <p class="text-light text-opacity-75 mb-0">Пон-Пет | 8:00-17:00ч.</p>
+        </div>
       </div>
-      <div class="col-xxl-4 mb-5">
-        <h3 class="text-center text-decoration-underline">Контакти</h3>
-        <ul class="list-unstyled">
-          <li class="my-3">
-            <img class="icon me-2" src="images/locationIcon.png" alt="" />
-            <span
-              >Южна промишлена зона, Дълга Лъка, гр. Велико Търново 5008</span
-            >
+
+      <div class="col-xxl-4 d-flex flex-column gap-3">
+        <h3 class="text-center">Контакти</h3>
+
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li
+            class="d-flex flex-md-row flex-column align-items-center text-md-start text-center gap-2"
+          >
+            <img
+              class="icon me-2"
+              src="images/locationIcon.png"
+              alt="location image"
+            />
+
+            <p class="text-light text-opacity-75 mb-0">
+              Южна промишлена зона, Дълга Лъка, гр. Велико Търново 5008
+            </p>
           </li>
-          <li class="my-3">
-            <img class="icon me-2" src="images/phone.png" alt="" />
-            <span>+359 88 876 9047</span>
+
+          <li class="d-flex flex-md-row flex-column align-items-center gap-2">
+            <img class="icon me-2" src="images/phone.png" alt="phone image" />
+
+            <p class="text-light text-opacity-75 mb-0">+359 88 876 9047</p>
           </li>
-          <li class="my-3">
-            <img class="icon me-2" src="images/email.png" alt="" />
-            <span> tur92.com</span>
+
+          <li class="d-flex flex-md-row flex-column align-items-center gap-2">
+            <img class="icon me-2" src="images/email.png" alt="mail image" />
+
+            <p class="text-light text-opacity-75 mb-0">crane.tur92&#64;gmail.com</p>
           </li>
         </ul>
       </div>
     </div>
+
     <div class="row mt-3">
-      <div class="col-12 text-center">
-        <p>&copy; {{ year }} Тур-92. Всички права запазени.</p>
+      <div class="col-12 text-center text-secondary text-opacity-50">
+        <span>&copy; {{ year }} Тур-92. Всички права запазени.</span>
       </div>
     </div>
+
   </div>
 </footer>

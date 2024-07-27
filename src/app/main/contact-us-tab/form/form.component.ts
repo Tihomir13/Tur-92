@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import {
   FormControl,
@@ -12,7 +13,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   standalone: true,
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss'],
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, NgClass],
 })
 export class FormComponent {
   form = new FormGroup({
@@ -22,6 +23,14 @@ export class FormComponent {
     }),
     text: new FormControl('', { validators: [Validators.required] }),
   });
+
+  get telIsValid() {
+    return (
+      this.form.touched &&
+      !this.form.controls.tel.defaultValue &&
+      this.form.controls.tel.invalid
+    );
+  }
 
   onSubmit(e: Event) {
     e.preventDefault();
