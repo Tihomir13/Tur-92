@@ -55,7 +55,7 @@ export class MapComponent implements OnInit {
         new Tile({
           source: new OSM(),
         }),
-        vectorLayer, // Добавяме векторния слой тук
+        vectorLayer,
       ],
       target: 'map',
       view: new View({
